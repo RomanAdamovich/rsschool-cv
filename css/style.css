@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: "Roboto";
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#605250+0,675755+16,675755+16,675755+25,675755+30,675755+30,675755+30,675755+30,675755+33,1b1414+56,1b1414+100 */
+    background: #605250;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #605250 0%, #675755 16%, #675755 16%, #675755 25%, #675755 30%, #675755 30%, #675755 30%, #675755 30%, #675755 33%, #1b1414 56%, #1b1414 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #605250 0%, #675755 16%, #675755 16%, #675755 25%, #675755 30%, #675755 30%, #675755 30%, #675755 30%, #675755 33%, #1b1414 56%, #1b1414 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #605250 0%, #675755 16%, #675755 16%, #675755 25%, #675755 30%, #675755 30%, #675755 30%, #675755 30%, #675755 33%, #1b1414 56%, #1b1414 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#605250', endColorstr='#1b1414', GradientType=1);
+    /* IE6-9 */
+}
+
+
+/*------------ Header-----------*/
+
+.container {
+    margin: 0 auto;
+    max-width: 1300px;
+    box-shadow: 0 0 20px black;
+}
+
+.header-container {
+    height: 50px;
+    margin: 16px auto;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 20px black;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 16px 0;
+}
+
+.nav-link {
+    line-height: 50px;
+    color: white;
+    padding: 0 12px;
+    text-decoration: none;
+}
+
+.nav-item {
+    animation: li ease 1s forwards;
+    opacity: 0;
+}
+
+@keyframes li {
+    from {
+        margin-top: -80px;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.nav-item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.nav-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.nav-item:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.nav-item:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.nav-item:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+.nav-item:nth-child(7) {
+    animation-delay: 1.4s;
+}
+
+.nav-item:nth-child(8) {
+    animation-delay: 1.6s;
+}
+
+
+/*-------------------Main----------------------*/
+
+
+/*--------------------Profile------------------*/
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.foto {
+    margin: 40px 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    animation: foto 2s ease 1.8s forwards;
+    opacity: 0;
+}
+
+.profile-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profileH1 {
+    position: relative;
+    font-size: 36px;
+    color: white;
+    line-height: 40px;
+    animation: foto 1s ease 1.9s forwards;
+    opacity: 0;
+}
+
+.profileH1::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background-color: #fff;
+    left: 20%;
+    bottom: -30px;
+    animation: foto 1s ease 2s forwards;
+    opacity: 0;
+}
+
+.profileH2 {
+    color: white;
+    font-size: 19px;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin: 50px 10px 0 10px;
+    animation: foto 1s ease 2.1s forwards;
+    opacity: 0;
+}
+
+@keyframes foto {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*-----------------------Courses Skill Project-------------------------*/
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section {
+    width: 30%;
+    height: 200px;
+    background-color: rgba(78, 64, 64, 0.2);
+    border-radius: 10px;
+    border: 1px solid rgb(103, 87, 85, 0.2);
+    text-align: center;
+    margin: 10px;
+    animation: foto 1s ease 2.3s forwards;
+    opacity: 0;
+}
+
+.section-title {
+    color: white;
+    font-size: 26px;
+    margin: 15px;
+}
+
+.section-list {
+    font-size: 20px;
+    color: rgba(230, 230, 230, 0.801);
+    margin: 0 10px;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+
+/*-----------Code Education----------*/
+
+.section-code {
+    height: auto;
+    text-align: left;
+    width: calc(50% - 22px);
+}
+
+.section-title-code {
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    margin: 15px;
+}
+
+
+/*----------------Summary-----------*/
+
+.section-summary {
+    height: 220px;
+    width: 100%;
+    animation: foto 2s ease 2.3s forwards;
+    opacity: 0;
+}
+
+.section-summary p {
+    text-indent: 40px;
+    text-align: justify;
+}
+
+
+/*----------English--------*/
+
+.section-english {
+    width: calc(50% - 22px);
+    height: 270px;
+}
+
+
+/*-------------Contacts----------*/
+
+#contacts {
+    text-align: left;
+}
+
+.hover:hover {
+    color: rgb(176, 214, 174);
+}
+
+.section-contacts-li {
+    width: 100%;
+}
+
+
+/*----------------Footer-------------*/
+
+.footer-container {
+    margin: 16px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(230, 230, 230, 0.801);
+}
+
+.footer-list {
+    color: rgba(230, 230, 230, 0.801);
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.fa {
+    padding: 10px;
+    color: rgb(194, 212, 193);
+}
+
+.rss {
+    background: url(../assets/img/rs.jpg) top/cover no-repeat;
+    height: 50px;
+    width: 80px;
+    margin-right: 20px;
+}
+
+
+/*---------Адаптация-------*/
+
+@media (max-width: 1298px) {
+    .section-summary {
+        height: auto;
+    }
+}
+
+@media (max-width:830px) {
+    .profileH2 {
+        text-align: center;
+    }
+    .profile {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .foto {
+        width: 200px;
+        height: 200px;
+        box-shadow: inset 0px 0 30px rgb(103 87 85);
+    }
+}
+
+@media(max-width:703px) {
+    .section {
+        width: 100%;
+    }
+    .section-education {
+        width: 100%;
+    }
+    .section-contacts-li {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+    }
+    .section-contacts {
+        text-align: left;
+    }
+    .nav-link {
+        font-size: 15px;
+        padding: 0 7px;
+    }
+}
+
+@media (max-width:540px) {
+    .foto {
+        width: 150px;
+        height: 150px;
+        box-shadow: inset 0px 0 10px rgb(103 87 85);
+    }
+    .nav-link {
+        font-size: 15px;
+        padding: 0 4px;
+    }
+}
+
+@media (max-width:475px) {
+    .nav-link {
+        font-size: 15px;
+        padding: 0 4px;
+        line-height: 25px;
+    }
+}
