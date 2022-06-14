@@ -1,6 +1,6 @@
 # Lozenko Roman
 
-![myFoto](img/portfolio3.png "Моё фото")
+![myFoto](assets/img/portfolio.png "Моё фото")
 
 ## Contact
 * __E-mail:__ Lozenko.roman211@gmail.com
